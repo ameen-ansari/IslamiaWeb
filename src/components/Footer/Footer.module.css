@@ -1,0 +1,200 @@
+.parent {
+  background-color: #151515;
+  display: flex;
+  margin: auto;
+  padding: 6rem 2rem 5rem 5rem;
+  gap: 3rem;
+  position: relative;
+}
+
+@media (max-width: 1050px) {
+  .parent {
+    padding: 6rem 2rem 5rem 2rem;
+  }
+}
+
+.parent > div > p {
+  color: #a2a2a2;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+}
+.parent > div > div {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  gap: 1rem;
+}
+.parent > div > p:nth-child(1) {
+  color: white;
+  margin-bottom: 1rem;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+.parent > div:nth-child(1) > p:nth-child(2) {
+  padding-right: 8rem;
+}
+
+.parent > div:nth-child(4) > p:nth-child(1) {
+  padding-left: 15%;
+}
+
+.parent > div:nth-child(1) > img {
+  width: 112px;
+  height: 100px;
+}
+.parent > div:nth-child(1) {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.parent > div:nth-child(2) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.parent > div:nth-child(3) {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.parent > div:nth-child(4) {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: flex;
+}
+
+.parent > div:nth-child(4) > div {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.parent > div:nth-child(4) > div > div {
+  width: 70px;
+  height: 70px;
+  background-color: #c4c4c4;
+}
+.parent > div:nth-child(4) > div > div:nth-child(2) {
+  background-color: #d8d8d8;
+}
+
+.copyR {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 5rem;
+  color: #989898;
+}
+.FooterDivs {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .parent > div:nth-child(1) {
+    flex: 1.75;
+  }
+  .parent > div:nth-child(1) > p:nth-child(2) {
+    padding-right: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .parent {
+    flex-direction: column;
+  }
+  .parent > div:nth-child(1) > img {
+    width: 200px;
+    margin: auto;
+  }
+  .parent > div:nth-child(1) > div {
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .parent > div:nth-child(1) {
+    display: flex;
+    flex-direction: column !important;
+    text-align: center;
+  }
+  .parent > div:nth-child(2) {
+    display: none;
+  }
+  .parent > div:nth-child(3) {
+    display: none;
+  }
+
+  .parent > div > div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .FooterDivs > div > p:nth-child(1) {
+    color: white;
+    margin-bottom: 1rem;
+  }
+  .FooterDivs {
+    background-color: #151515;
+    display: flex;
+    padding: 2rem;
+    gap: 3rem;
+    position: relative;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .FooterDivs > div > p {
+    color: #a2a2a2;
+    cursor: pointer;
+  }
+  .FooterDivs > div > div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 1rem;
+  }
+  .FooterDivs div {
+    flex: 1;
+    flex-direction: column;
+  }
+  .FooterDivs > div:nth-child(3) > div > div {
+    width: 25px;
+    height: 25px;
+    background-color: #a2a2a2;
+  }
+  .FooterDivs > div:nth-child(3) > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .parent > div:nth-child(1) > p:nth-child(2) {
+    padding: 0px 2rem;
+  }
+  .parent > div:nth-child(4) > p:nth-child(1) {
+    padding-left: 0%;
+  }
+  .parent > div:nth-child(4) > div {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 500px) {
+  .parent > div:nth-child(1) > img {
+    width: 150px;
+    margin: auto;
+  }
+  .FooterDivs {
+    padding: 0%;
+  }
+}

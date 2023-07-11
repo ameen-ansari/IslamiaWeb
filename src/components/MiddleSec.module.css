@@ -1,0 +1,48 @@
+.parent {
+  width: 100%;
+  background-color: #fafafa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.sec1 img {
+  width: 80%;
+  height: 80%;
+}
+.sec1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sec2 {
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+.sec2 > div {
+  width: 80% ;
+  margin-left: 10%;
+}
+
+.heading {
+  text-align: center;
+  font-family: "Quicksand";
+  font-size: 42px;
+}
+.sec2 label {
+  font-family: "Poppins";
+  margin-bottom: 0 !important;
+}
+
+@media (max-width: 750px) {
+    .parent {
+        flex-direction: column;
+    }
+    .heading {
+        font-size: 32px;
+    }
+}
