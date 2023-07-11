@@ -1,6 +1,11 @@
 import style from './MiddleSec.module.css'
 import img from '../images/backgroundImg.jpg'
+import PhoneInput from 'react-phone-input-2'
+import 'react-phone-input-2/lib/style.css'
+import { useState } from 'react'
+
 function MiddleSec() {
+    const [phone, setphone] = useState('1')
     return (
         <div className={style.parent}>
             <div className={style.sec1}>
@@ -30,17 +35,20 @@ function MiddleSec() {
                         <option value="3">Quram Hifz</option>
                     </select>
                 </div>
+
                 <div className="mb-3">
                     <label htmlFor="exampleInputEmail1" className="form-label">
                         Phone Number
                     </label>
-                    <input
-                        type="email"
-                        placeholder="Enter Phone Number"
-                        className="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        name="email"
+                    <PhoneInput
+                        country={'us'}
+                        value={phone}
+                        onChange={(e) => {
+                            setphone(e)
+                        }}
+                        inputProps={{
+                            required: true
+                        }}
                     />
                 </div>
                 <div>
